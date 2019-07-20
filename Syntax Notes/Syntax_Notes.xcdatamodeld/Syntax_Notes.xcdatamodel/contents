@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14135" systemVersion="17C88" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Notes" representedClassName="Notes" syncable="YES" codeGenerationType="class">
+        <attribute name="note_body" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="note_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="note_title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Trash" representedClassName="Trash" syncable="YES" codeGenerationType="class">
+        <attribute name="trash_body" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trash_id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="trash_title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Notes" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="Trash" positionX="-54" positionY="9" width="128" height="90"/>
+    </elements>
 </model>

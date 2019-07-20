@@ -8,18 +8,58 @@
 
 import UIKit
 import CoreData
+import IQKeyboardManagerSwift
+import FacebookLogin
+import FBSDKLoginKit
+import FacebookCore
+import GoogleSignIn
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
 
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.enableAutoToolbar = true
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        GIDSignIn.sharedInstance().clientID = "659313015854-ga16pt231el1bnjok86b7rt6955innom.apps.googleusercontent.com"
+        GIDSignIn.sharedInstance().delegate = self
+        
+        UIApplication.shared.statusBarStyle = .lightContent
+        if let statusBar = UIApplication.shared.value(forKey: "statusBar") as? UIView{
+            statusBar.backgroundColor = UIColor(red: 54.0/255.0, green: 47.0/255.0, blue: 165.0/255.0, alpha: 1.0)
+        }
+        
+        if let _ = UserDefaults.standard.string(forKey: "USERID") {
+            HomeOpen()
+        } else {
+            FirstOpen()
+        }
         return true
     }
-
+    
+    func FirstOpen() {
+        let appDel :AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        let mainstoryboard :UIStoryboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let viewcntrl = mainstoryboard.instantiateViewController(withIdentifier: "FirstViewController") as! FirstViewController
+        let navigationController = UINavigationController(rootViewController: viewcntrl)
+        navigationController.isNavigationBarHidden = true
+        appDel.window?.rootViewController = navigationController
+        self.window?.makeKeyAndVisible()
+    }
+    
+    func HomeOpen() {
+        let appDel :AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        let mainstoryboard :UIStoryboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let viewcntrl = mainstoryboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        let navigationController = UINavigationController(rootViewController: viewcntrl)
+        navigationController.isNavigationBarHidden = true
+        appDel.window?.rootViewController = navigationController
+        self.window?.makeKeyAndVisible()
+    }
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
@@ -88,6 +128,70 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-
 }
 
+// MARK: Facebook Login
+extension AppDelegate{
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
+        let handleFB = FBSDKApplicationDelegate.sharedInstance().application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
+        let handleGM =  GIDSignIn.sharedInstance().handle(url,
+                                                                sourceApplication: sourceApplication,
+                                                                annotation: annotation)
+            return handleFB || handleGM
+    }
+}
+
+// MARK: Google Sign In
+extension AppDelegate: GIDSignInDelegate{
+    @available(iOS 9.0, *)
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
+        return GIDSignIn.sharedInstance().handle(url,
+                                                 sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
+                                                 annotation: options[UIApplication.OpenURLOptionsKey.annotation])
+    }
+    
+    // [START signin_handler]
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!,
+              withError error: Error!) {
+        if let error = error {
+            print("\(error.localizedDescription)")
+            // [START_EXCLUDE silent]
+            NotificationCenter.default.post(
+                name: Notification.Name(rawValue: "ToggleAuthUINotification"), object: nil, userInfo: nil)
+            // [END_EXCLUDE]
+        } else {
+            // Perform any operations on signed in user here.
+            let userId = user.userID                  // For client-side use only!
+            let idToken = user.authentication.idToken // Safe to send to the server
+            let fullName = user.profile.name
+            let givenName = user.profile.givenName
+            let familyName = user.profile.familyName
+            let email = user.profile.email
+            print("userid = \(userId ?? "")")
+            print("idToken = \(idToken ?? "")")
+            print("fullName = \(fullName ?? "")")
+            print("givenName = \(givenName ?? "")")
+            print("familyName = \(familyName ?? "")")
+            print("email = \(email ?? "")")
+            // [START_EXCLUDE]
+            NotificationCenter.default.post(
+                name: Notification.Name(rawValue: "ToggleAuthUINotification"),
+                object: nil,
+                userInfo: ["statusText": "Signed in user:\n\(fullName)"])
+            // [END_EXCLUDE]
+        }
+    }
+    // [END signin_handler]
+    // [START disconnect_handler]
+    func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!,
+              withError error: Error!) {
+        // Perform any operations when the user disconnects from app here.
+        // [START_EXCLUDE]
+        NotificationCenter.default.post(
+            name: Notification.Name(rawValue: "ToggleAuthUINotification"),
+            object: nil,
+            userInfo: ["statusText": "User has disconnected."])
+        // [END_EXCLUDE]
+    }
+    // [END disconnect_handler]
+}

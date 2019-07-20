@@ -1,0 +1,6 @@
+framework module Pods_Syntax_Notes {
+  umbrella header "Pods-Syntax Notes-umbrella.h"
+
+  export *
+  module * { export * }
+}

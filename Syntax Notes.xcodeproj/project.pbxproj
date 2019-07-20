@@ -3,19 +3,78 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EB7D9AF92E6D3B14016E7A9 /* Pods_Syntax_Notes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EB5EF68E2387ABEF1683220 /* Pods_Syntax_Notes.framework */; };
+		A3282641215631AB00524784 /* TrashDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3282640215631AB00524784 /* TrashDetailsViewController.swift */; };
+		A331D06F2155763C0043995C /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A331D06E2155763C0043995C /* Alert.swift */; };
+		A346B017214574C200724000 /* AddNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A346B016214574C200724000 /* AddNotesViewController.swift */; };
+		A346B0192145A9D200724000 /* TrashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A346B0182145A9D200724000 /* TrashViewController.swift */; };
+		A3592913214EE122005617C8 /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3592912214EE122005617C8 /* DataBase.swift */; };
+		A371F38421B3DEB000933C7C /* UIUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A371F38321B3DEB000933C7C /* UIUtility.swift */; };
+		A371F38621BBB62B00933C7C /* IBDesignable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A371F38521BBB62A00933C7C /* IBDesignable.swift */; };
+		A371F38821BBD45000933C7C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A371F38721BBD45000933C7C /* SignUpViewController.swift */; };
+		A371F38A21BBDC1700933C7C /* ForgotViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A371F38921BBDC1700933C7C /* ForgotViewController.swift */; };
+		A371F38D21BBFC0100933C7C /* HomeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A371F38B21BBFC0100933C7C /* HomeCollectionCell.swift */; };
+		A371F38E21BBFC0100933C7C /* HomeCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A371F38C21BBFC0100933C7C /* HomeCollectionCell.xib */; };
+		A371F39121BC10DE00933C7C /* SearchCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A371F38F21BC10DE00933C7C /* SearchCollectionCell.swift */; };
+		A371F39221BC10DE00933C7C /* SearchCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A371F39021BC10DE00933C7C /* SearchCollectionCell.xib */; };
+		A371F39421BC549F00933C7C /* ResponseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A371F39321BC549F00933C7C /* ResponseClass.swift */; };
+		A371F39621BCDFCD00933C7C /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A371F39521BCDFCD00933C7C /* APIManager.swift */; };
+		A371F39821BCF53900933C7C /* URL File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A371F39721BCF53900933C7C /* URL File.swift */; };
+		A371F39A21BEE89D00933C7C /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = A371F39921BEE89D00933C7C /* Utility.swift */; };
+		A371F39C21C4E43A00933C7C /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A371F39B21C4E43900933C7C /* SearchViewController.swift */; };
+		A371F39E21C522F800933C7C /* UpdateNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A371F39D21C522F800933C7C /* UpdateNoteViewController.swift */; };
+		A371F3A021C63D8A00933C7C /* LogOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A371F39F21C63D8A00933C7C /* LogOutViewController.swift */; };
+		A38286C72270EE1F009A1B68 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38286C62270EE1F009A1B68 /* ProfileViewController.swift */; };
+		A38286C92270EE3A009A1B68 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38286C82270EE3A009A1B68 /* ChangePasswordViewController.swift */; };
+		A3DE9CA32152D64000D0DBEE /* NotesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DE9CA22152D64000D0DBEE /* NotesData.swift */; };
+		A3E85E3C213F20AD00AFF58D /* SlideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E85E3B213F20AD00AFF58D /* SlideMenuViewController.swift */; };
+		A3ECF6AE224FDC150053D303 /* EmptyFile in Resources */ = {isa = PBXBuildFile; fileRef = A3ECF6AD224FDC150053D303 /* EmptyFile */; };
+		A3F6319021A17CB60060709D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F6318F21A17CB60060709D /* FirstViewController.swift */; };
+		A3F75A0921A889E800E4C565 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F75A0821A889E800E4C565 /* LoginViewController.swift */; };
 		A3FD5047213DAF6000825EBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD5046213DAF6000825EBC /* AppDelegate.swift */; };
 		A3FD5049213DAF6000825EBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3FD5048213DAF6000825EBC /* ViewController.swift */; };
 		A3FD504C213DAF6000825EBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3FD504A213DAF6000825EBC /* Main.storyboard */; };
 		A3FD504F213DAF6000825EBC /* Syntax_Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A3FD504D213DAF6000825EBC /* Syntax_Notes.xcdatamodeld */; };
 		A3FD5051213DAF6200825EBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3FD5050213DAF6200825EBC /* Assets.xcassets */; };
 		A3FD5054213DAF6200825EBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3FD5052213DAF6200825EBC /* LaunchScreen.storyboard */; };
+		A7703C2B22E0D4550045D115 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7703C2A22E0D4550045D115 /* HomeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4EB5EF68E2387ABEF1683220 /* Pods_Syntax_Notes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Syntax_Notes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96152C7103F849F0C4C6E6DB /* Pods-Syntax Notes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Syntax Notes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Syntax Notes/Pods-Syntax Notes.debug.xcconfig"; sourceTree = "<group>"; };
+		A3282640215631AB00524784 /* TrashDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashDetailsViewController.swift; sourceTree = "<group>"; };
+		A331D06E2155763C0043995C /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		A346B016214574C200724000 /* AddNotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNotesViewController.swift; sourceTree = "<group>"; };
+		A346B0182145A9D200724000 /* TrashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrashViewController.swift; sourceTree = "<group>"; };
+		A3592912214EE122005617C8 /* DataBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
+		A371F38321B3DEB000933C7C /* UIUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIUtility.swift; sourceTree = "<group>"; };
+		A371F38521BBB62A00933C7C /* IBDesignable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBDesignable.swift; sourceTree = "<group>"; };
+		A371F38721BBD45000933C7C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		A371F38921BBDC1700933C7C /* ForgotViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotViewController.swift; sourceTree = "<group>"; };
+		A371F38B21BBFC0100933C7C /* HomeCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionCell.swift; sourceTree = "<group>"; };
+		A371F38C21BBFC0100933C7C /* HomeCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionCell.xib; sourceTree = "<group>"; };
+		A371F38F21BC10DE00933C7C /* SearchCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionCell.swift; sourceTree = "<group>"; };
+		A371F39021BC10DE00933C7C /* SearchCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCollectionCell.xib; sourceTree = "<group>"; };
+		A371F39321BC549F00933C7C /* ResponseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseClass.swift; sourceTree = "<group>"; };
+		A371F39521BCDFCD00933C7C /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		A371F39721BCF53900933C7C /* URL File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL File.swift"; sourceTree = "<group>"; };
+		A371F39921BEE89D00933C7C /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		A371F39B21C4E43900933C7C /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		A371F39D21C522F800933C7C /* UpdateNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateNoteViewController.swift; sourceTree = "<group>"; };
+		A371F39F21C63D8A00933C7C /* LogOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutViewController.swift; sourceTree = "<group>"; };
+		A38286C62270EE1F009A1B68 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A38286C82270EE3A009A1B68 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		A38286E12275D6F8009A1B68 /* BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgingHeader.h; sourceTree = "<group>"; };
+		A3DE9CA22152D64000D0DBEE /* NotesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesData.swift; sourceTree = "<group>"; };
+		A3E85E3B213F20AD00AFF58D /* SlideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideMenuViewController.swift; sourceTree = "<group>"; };
+		A3ECF6AD224FDC150053D303 /* EmptyFile */ = {isa = PBXFileReference; lastKnownFileType = text; path = EmptyFile; sourceTree = "<group>"; };
+		A3F6318F21A17CB60060709D /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		A3F75A0821A889E800E4C565 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A3FD5043213DAF6000825EBC /* Syntax Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Syntax Notes.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FD5046213DAF6000825EBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3FD5048213DAF6000825EBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +83,8 @@
 		A3FD5050213DAF6200825EBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3FD5053213DAF6200825EBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3FD5055213DAF6200825EBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7703C2A22E0D4550045D115 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		AB78E8B4EC52B03B9E2F595B /* Pods-Syntax Notes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Syntax Notes.release.xcconfig"; path = "Pods/Target Support Files/Pods-Syntax Notes/Pods-Syntax Notes.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +92,112 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EB7D9AF92E6D3B14016E7A9 /* Pods_Syntax_Notes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8AFC5E330F0EBEE3B6911D45 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96152C7103F849F0C4C6E6DB /* Pods-Syntax Notes.debug.xcconfig */,
+				AB78E8B4EC52B03B9E2F595B /* Pods-Syntax Notes.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A07AABBC4356177ADDBF8701 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4EB5EF68E2387ABEF1683220 /* Pods_Syntax_Notes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A36FCAE62251D67100AF0034 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				A3592912214EE122005617C8 /* DataBase.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		A36FCAE72251D69300AF0034 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A371F39521BCDFCD00933C7C /* APIManager.swift */,
+				A371F39721BCF53900933C7C /* URL File.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A36FCAE82251D6AD00AF0034 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				A371F38521BBB62A00933C7C /* IBDesignable.swift */,
+				A371F39921BEE89D00933C7C /* Utility.swift */,
+				A331D06E2155763C0043995C /* Alert.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		A36FCAE92251D6C900AF0034 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				A371F39321BC549F00933C7C /* ResponseClass.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		A36FCAEA2251D6D500AF0034 /* Cell XIB */ = {
+			isa = PBXGroup;
+			children = (
+				A371F38C21BBFC0100933C7C /* HomeCollectionCell.xib */,
+				A371F39021BC10DE00933C7C /* SearchCollectionCell.xib */,
+			);
+			path = "Cell XIB";
+			sourceTree = "<group>";
+		};
+		A36FCAEB2251D6F700AF0034 /* Cell Class */ = {
+			isa = PBXGroup;
+			children = (
+				A371F38B21BBFC0100933C7C /* HomeCollectionCell.swift */,
+				A371F38F21BC10DE00933C7C /* SearchCollectionCell.swift */,
+				A7703C2A22E0D4550045D115 /* HomeTableViewCell.swift */,
+			);
+			path = "Cell Class";
+			sourceTree = "<group>";
+		};
+		A3ECF6AC224FC05A0053D303 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A3E85E3B213F20AD00AFF58D /* SlideMenuViewController.swift */,
+				A3F6318F21A17CB60060709D /* FirstViewController.swift */,
+				A3FD5048213DAF6000825EBC /* ViewController.swift */,
+				A371F39B21C4E43900933C7C /* SearchViewController.swift */,
+				A3F75A0821A889E800E4C565 /* LoginViewController.swift */,
+				A371F39F21C63D8A00933C7C /* LogOutViewController.swift */,
+				A371F38721BBD45000933C7C /* SignUpViewController.swift */,
+				A371F38921BBDC1700933C7C /* ForgotViewController.swift */,
+				A346B016214574C200724000 /* AddNotesViewController.swift */,
+				A371F39D21C522F800933C7C /* UpdateNoteViewController.swift */,
+				A346B0182145A9D200724000 /* TrashViewController.swift */,
+				A3282640215631AB00524784 /* TrashDetailsViewController.swift */,
+				A38286C62270EE1F009A1B68 /* ProfileViewController.swift */,
+				A38286C82270EE3A009A1B68 /* ChangePasswordViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 		A3FD503A213DAF6000825EBC = {
 			isa = PBXGroup;
 			children = (
 				A3FD5045213DAF6000825EBC /* Syntax Notes */,
 				A3FD5044213DAF6000825EBC /* Products */,
+				8AFC5E330F0EBEE3B6911D45 /* Pods */,
+				A07AABBC4356177ADDBF8701 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,13 +212,23 @@
 		A3FD5045213DAF6000825EBC /* Syntax Notes */ = {
 			isa = PBXGroup;
 			children = (
+				A36FCAEB2251D6F700AF0034 /* Cell Class */,
+				A36FCAEA2251D6D500AF0034 /* Cell XIB */,
+				A36FCAE92251D6C900AF0034 /* Response */,
+				A36FCAE82251D6AD00AF0034 /* Utility */,
+				A36FCAE72251D69300AF0034 /* Service */,
+				A36FCAE62251D67100AF0034 /* Database */,
+				A3ECF6AC224FC05A0053D303 /* View Controllers */,
 				A3FD5046213DAF6000825EBC /* AppDelegate.swift */,
-				A3FD5048213DAF6000825EBC /* ViewController.swift */,
 				A3FD504A213DAF6000825EBC /* Main.storyboard */,
 				A3FD5050213DAF6200825EBC /* Assets.xcassets */,
 				A3FD5052213DAF6200825EBC /* LaunchScreen.storyboard */,
 				A3FD5055213DAF6200825EBC /* Info.plist */,
 				A3FD504D213DAF6000825EBC /* Syntax_Notes.xcdatamodeld */,
+				A3DE9CA22152D64000D0DBEE /* NotesData.swift */,
+				A371F38321B3DEB000933C7C /* UIUtility.swift */,
+				A3ECF6AD224FDC150053D303 /* EmptyFile */,
+				A38286E12275D6F8009A1B68 /* BridgingHeader.h */,
 			);
 			path = "Syntax Notes";
 			sourceTree = "<group>";
@@ -74,9 +240,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3FD5058213DAF6200825EBC /* Build configuration list for PBXNativeTarget "Syntax Notes" */;
 			buildPhases = (
+				5C83D83C4E365F96FC1DCEF3 /* [CP] Check Pods Manifest.lock */,
 				A3FD503F213DAF6000825EBC /* Sources */,
 				A3FD5040213DAF6000825EBC /* Frameworks */,
 				A3FD5041213DAF6000825EBC /* Resources */,
+				32808E7024B333C016651EE6 /* [CP] Embed Pods Frameworks */,
+				858FC2AE73E5285425DB352F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -99,6 +268,7 @@
 				TargetAttributes = {
 					A3FD5042213DAF6000825EBC = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -125,6 +295,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3ECF6AE224FDC150053D303 /* EmptyFile in Resources */,
+				A371F39221BC10DE00933C7C /* SearchCollectionCell.xib in Resources */,
+				A371F38E21BBFC0100933C7C /* HomeCollectionCell.xib in Resources */,
 				A3FD5054213DAF6200825EBC /* LaunchScreen.storyboard in Resources */,
 				A3FD5051213DAF6200825EBC /* Assets.xcassets in Resources */,
 				A3FD504C213DAF6000825EBC /* Main.storyboard in Resources */,
@@ -133,13 +306,93 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		32808E7024B333C016651EE6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Syntax Notes/Pods-Syntax Notes-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Syntax Notes/Pods-Syntax Notes-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Syntax Notes/Pods-Syntax Notes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C83D83C4E365F96FC1DCEF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Syntax Notes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		858FC2AE73E5285425DB352F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Syntax Notes/Pods-Syntax Notes-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Syntax Notes/Pods-Syntax Notes-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Syntax Notes/Pods-Syntax Notes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A3FD503F213DAF6000825EBC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3DE9CA32152D64000D0DBEE /* NotesData.swift in Sources */,
+				A371F39E21C522F800933C7C /* UpdateNoteViewController.swift in Sources */,
+				A7703C2B22E0D4550045D115 /* HomeTableViewCell.swift in Sources */,
 				A3FD5049213DAF6000825EBC /* ViewController.swift in Sources */,
+				A346B0192145A9D200724000 /* TrashViewController.swift in Sources */,
+				A3F6319021A17CB60060709D /* FirstViewController.swift in Sources */,
+				A3E85E3C213F20AD00AFF58D /* SlideMenuViewController.swift in Sources */,
+				A371F39421BC549F00933C7C /* ResponseClass.swift in Sources */,
+				A371F38A21BBDC1700933C7C /* ForgotViewController.swift in Sources */,
+				A346B017214574C200724000 /* AddNotesViewController.swift in Sources */,
+				A371F38D21BBFC0100933C7C /* HomeCollectionCell.swift in Sources */,
+				A38286C72270EE1F009A1B68 /* ProfileViewController.swift in Sources */,
+				A371F38421B3DEB000933C7C /* UIUtility.swift in Sources */,
+				A38286C92270EE3A009A1B68 /* ChangePasswordViewController.swift in Sources */,
 				A3FD504F213DAF6000825EBC /* Syntax_Notes.xcdatamodeld in Sources */,
+				A371F39A21BEE89D00933C7C /* Utility.swift in Sources */,
+				A3592913214EE122005617C8 /* DataBase.swift in Sources */,
+				A371F39C21C4E43A00933C7C /* SearchViewController.swift in Sources */,
+				A371F39621BCDFCD00933C7C /* APIManager.swift in Sources */,
+				A371F39121BC10DE00933C7C /* SearchCollectionCell.swift in Sources */,
+				A371F39821BCF53900933C7C /* URL File.swift in Sources */,
+				A371F38821BBD45000933C7C /* SignUpViewController.swift in Sources */,
+				A331D06F2155763C0043995C /* Alert.swift in Sources */,
+				A3282641215631AB00524784 /* TrashDetailsViewController.swift in Sources */,
+				A3F75A0921A889E800E4C565 /* LoginViewController.swift in Sources */,
+				A371F38621BBB62B00933C7C /* IBDesignable.swift in Sources */,
+				A371F3A021C63D8A00933C7C /* LogOutViewController.swift in Sources */,
 				A3FD5047213DAF6000825EBC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,36 +535,94 @@
 		};
 		A3FD5059213DAF6200825EBC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96152C7103F849F0C4C6E6DB /* Pods-Syntax Notes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A75QCH7EYR;
+				DEVELOPMENT_TEAM = 2ZHP4A28C2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Syntax\\ Notes",
+				);
 				INFOPLIST_FILE = "Syntax Notes/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.TechnoBrix.Syntax-Notes";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"DropDown\"",
+					"-framework",
+					"\"IQKeyboardManagerSwift\"",
+					"-framework",
+					"\"MBProgressHUD\"",
+					"-framework",
+					"\"SideMenu\"",
+					"-framework",
+					"\"SkyFloatingLabelTextField\"",
+					"-framework",
+					"\"SwiftMessages\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SyntaxNotes.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Syntax Notes/BridgingHeader.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		A3FD505A213DAF6200825EBC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB78E8B4EC52B03B9E2F595B /* Pods-Syntax Notes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A75QCH7EYR;
+				DEVELOPMENT_TEAM = 2ZHP4A28C2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Syntax\\ Notes",
+				);
 				INFOPLIST_FILE = "Syntax Notes/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.TechnoBrix.Syntax-Notes";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"Alamofire\"",
+					"-framework",
+					"\"DropDown\"",
+					"-framework",
+					"\"IQKeyboardManagerSwift\"",
+					"-framework",
+					"\"MBProgressHUD\"",
+					"-framework",
+					"\"SideMenu\"",
+					"-framework",
+					"\"SkyFloatingLabelTextField\"",
+					"-framework",
+					"\"SwiftMessages\"",
+					"-framework",
+					"\"SwiftyJSON\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.SyntaxNotes.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Syntax Notes/BridgingHeader.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
